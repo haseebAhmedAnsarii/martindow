@@ -1,0 +1,516 @@
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head><meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><meta http-equiv="X-UA-Compatible" content="IE=edge" /><meta name="viewport" content="width=device-width, initial-scale=1" /><meta name="description" /><meta name="author" /><title>
+	:: CONNECT ::
+</title><link rel="Icon" type="image/png" href="/images/hr_fevicon.png" sizes="96x96" />
+    <script type="text/javascript" src="../js/Jquery_1.9.js"></script>
+    <script type="text/javascript" src="../js/sb-admin-2.js"></script>
+    <!-- Bootstrap Core CSS -->
+    <link href="../css/bootstrap.min.css" rel="stylesheet" />
+    <!-- MetisMenu CSS -->
+    <link href="../css/metisMenu.min.css" rel="stylesheet" />
+    <!-- Custom Fonts -->
+    <link href="../css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <!-- Bootstrap Core CSS -->
+    <link href="../css/calendar-system.css" rel="stylesheet" />
+    <!-- Bootstrap Core JavaScript -->
+    <script type="text/javascript" src="../js/bootstrap.min.js"></script>
+    <!-- Metis Menu Plugin JavaScript -->
+    <script type="text/javascript" src="../js/metisMenu.min.js"></script>
+    <!-- Custom Theme JavaScript -->
+    
+    
+    <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.2.0/css/font-awesome.css">
+
+
+    <!-- Custom CSS -->
+    <link href="../css/dashboard.css" rel="stylesheet" />
+    <style>
+        .navbar-brand-paperless {
+            float: right;
+            height: 60px;
+            padding: 15px 15px;
+            font-size: 18px;
+            line-height: 20px;
+        }
+
+        .row {
+            margin-right: 0px !important;
+            margin-left: -15px;
+        }
+
+        .responsivepaper {
+            width: 100%;
+            max-width: 700px;
+            height: 40px;
+            width: 120px;
+        }
+
+        .footer {
+            position: inherit;
+            height: 30px;
+            background-color: white;
+            bottom: 0px;
+            left: 0px;
+            right: 0px;
+            margin-top: 10px;
+            margin-bottom: -1px;
+            border-top: 1px solid #292929;
+        }
+
+        .footer-inner {
+            padding: 15px 0;
+            font-size: 12px;
+            background: #111;
+            color: #999;
+            border-top: 1px solid #292929;
+        }
+    </style>
+    <style type="text/css">
+        li.dropdown:hover > .dropdown-menu {
+            display: block;
+        }
+
+        a {
+            color: #284695;
+            font-weight: bold;
+            padding: 0.2em, 0.2em;
+        }
+
+        .page-header {
+            margin: 15px 0 15px;
+        }
+
+            .page-header h3 {
+                margin-top: 0;
+            }
+
+        .panel-heading {
+            background: #8ed1f2;
+        }
+
+        /*nav navbar-top-links navbar-right
+            .btn {
+            background: #8ed1f2;
+        }*/
+        navbar-top-links.li {
+            margin-top: 0;
+        }
+
+        .navbar {
+            /*background: linear-gradient(-20deg, #bbe0f2 50%, #d9edf7 60%);*/
+            background: #D9EDF7;
+        }
+
+        #side-menu.nav {
+            /*margin-top:35px;*/
+            color: black;
+            /*background: linear-gradient(-20deg, #bbe0f2 30%, #d9edf7 40%);*/
+            background: #D9EDF7;
+            /*margin-left: 1px;*/
+        }
+
+        .sidebar ul li { /*For Borders of Menus*/
+            border-bottom: 3px solid white;
+        }
+
+        .navbar-default { /*For the border of Top nav bar*/
+            border-color: white;
+        }
+
+        .sidebar {
+            margin-top: 3px;
+        }
+
+        .nav.li {
+            color: white;
+        }
+
+        .nav {
+            color: blue;
+            margin-bottom: 0;
+        }
+
+        .bg {
+            animation: slide 3s ease-in-out infinite alternate;
+            background: linear-gradient(-20deg, #3792cb 30%, #296d98 20%);
+            bottom: 0;
+            left: -100%;
+            opacity: .5;
+            position: fixed;
+            right: -50%;
+            top: 0;
+            z-index: -1;
+        }
+
+        .bg2 {
+            animation-direction: alternate-reverse;
+            animation-duration: 4s;
+        }
+
+        .bg3 {
+            animation-duration: 5s;
+        }
+
+        .HR_LOGO {
+            margin-top: -10px;
+            margin-left: 5px;
+            width: 170px;
+            height: 110px;
+        }
+
+        .PAPERLESS_LOGO {
+            margin-top: 25px;
+            margin-left: 5px;
+            width: 200px;
+            height: 100px;
+        }
+
+
+        @keyframes slide {
+            0% {
+                transform: translatex(-25%);
+            }
+
+            100% {
+                transform: translatex(25%);
+            }
+        }
+
+        .dropdown-toggle {
+            margin-top: 55px;
+        }
+
+        .ajax__calendar_container {
+            z-index: 100;
+        }
+
+        /*li {
+            -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+            transition: transform 0.8s;
+            transform-style: preserve-3d;
+        }
+
+        li:hover {
+            transform: scale(1.05);
+        }*/
+    </style>
+<link href="../css/ajax-calendar.css" type="text/css" rel="stylesheet" /></head>
+<body>
+    
+    <div id="wrapper ">
+        <!-- Navigation -->
+        <nav class="navbar navbar-default navbar-static-top" role="navigation" style="margin-bottom: 0">
+            <div class="navbar-header col-md-10" style="padding-right:150px">
+              <a style="color:#8ed1f2; font-size: 10px; margin-top:2px; margin-left: 2px;" class="navbar-brand"> 
+                     <img class="HR_LOGO" src="https://oneclick.martindow.com/connect/icons/HrProductLogo.png" alt="" />
+                </a>  
+               <ul class="nav navbar-top-links navbar-center`">
+
+                <li class="dropdown">
+                     
+                
+            
+            </li>
+              <li class="dropdown">
+                
+            </li>
+               <li class="dropdown">
+                
+            </li>  
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<li class="dropdown" >
+                    <a class="dropdown-toggle" href="../Administration/ESS_Home.aspx">
+                        <img src="https://oneclick.martindow.com/connect/images/Connect_icons/final icons-18.png" alt="" height="35px" width="35px"/> 
+                    </a>
+
+                  </li>
+                         
+                 
+                 
+
+                 
+        
+                
+                    
+                
+            
+
+
+             
+               
+
+          
+              
+              
+
+               
+                   <li class="dropdown" >
+                   <a class="dropdown-toggle"  href="#">
+                       <img id="ctl00_Image2" src="https://oneclick.martindow.com/connect/images/Connect_icons/final icons-16.png" alt="" src="https://oneclick.martindow.com/connect/images/emp_images/missing-person-image.png" style="height:35px;width:35px;border-width:0px;" />
+                         
+                        
+                         <span id="ctl00_lblCurrentUser" style="color:Black;font-size:Medium;font-weight:bold;">8118</span>
+                    </a>
+                   
+                    <!-- /.dropdown-user -->
+                </li>
+             <li class="dropdown">
+                <a href="organogramnew.aspx" id="ctl00_A2" class="dropdown-toggle">
+                    <i style="color:black;" class="fa fa-sitemap fa-2x" ></i> 
+                </a>
+            </li>
+                  <li class="dropdown">
+                    <a class="dropdown-toggle" href="../Logout.aspx">
+                        <img src="https://oneclick.martindow.com/connect/images/Connect_icons/final icons-17.png" alt="" height="35px" width="35px" alt=""/>  
+                    </a>
+                      
+                    </li>
+
+                 
+             </ul>
+
+            
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+         
+            </div>
+
+         
+            <div class="row">
+                <div class ="col-md-10">
+              
+             </div>
+
+             
+            
+            </div>
+         
+
+            <div class="navbar-default sidebar" role="navigation">
+                <div id="ctl00_MenueDiv" class="sidebar-nav navbar-collapse"><ul class='nav' id='side-menu' >
+<li><a href="../Administration/Administration.aspx"><i class=''></i> Administration<span class='fa arrow'></a><ul class='nav nav-second-level' >
+<li><a href="../Administration/UserProfiles.aspx"><i class=''></i> User Profiles<span class='fa arrow'></a><ul class='nav nav-second-level' >
+<li><a href="../Administration/Admin_Change_password.aspx"><i class=''></i> Change Password</a></li></ul></li></ul></li></ul></div>
+                <!-- /.sidebar-collapse -->
+            </div>
+            <!-- /.navbar-static-side -->
+        </nav>
+
+
+        <!-- Page Content -->
+        <div id="page-wrapper">
+            <div class="container-fluid">
+                <form name="aspnetForm" method="post" action="./PAY_Report_Salaryslip_EmpWise_ESS.aspx" id="aspnetForm">
+<div>
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="" />
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKMTM0NjY2NDA4OA9kFgJmD2QWDgIDDxYCHgdWaXNpYmxlaGQCBQ8WAh8AaGQCBw8WAh8AaGQCCQ8PFgIeCEltYWdlVXJsBSx+L2ltYWdlcy9lbXBfaW1hZ2VzL21pc3NpbmctcGVyc29uLWltYWdlLnBuZ2RkAgsPDxYCHgRUZXh0BQQ4MTE4ZGQCDw8WAh4JaW5uZXJodG1sBcADPHVsIGNsYXNzPSduYXYnIGlkPSdzaWRlLW1lbnUnID4NCjxsaT48YSBocmVmPSIuLi9BZG1pbmlzdHJhdGlvbi9BZG1pbmlzdHJhdGlvbi5hc3B4Ij48aSBjbGFzcz0nJz48L2k+IEFkbWluaXN0cmF0aW9uPHNwYW4gY2xhc3M9J2ZhIGFycm93Jz48L2E+PHVsIGNsYXNzPSduYXYgbmF2LXNlY29uZC1sZXZlbCcgPg0KPGxpPjxhIGhyZWY9Ii4uL0FkbWluaXN0cmF0aW9uL1VzZXJQcm9maWxlcy5hc3B4Ij48aSBjbGFzcz0nJz48L2k+IFVzZXIgUHJvZmlsZXM8c3BhbiBjbGFzcz0nZmEgYXJyb3cnPjwvYT48dWwgY2xhc3M9J25hdiBuYXYtc2Vjb25kLWxldmVsJyA+DQo8bGk+PGEgaHJlZj0iLi4vQWRtaW5pc3RyYXRpb24vQWRtaW5fQ2hhbmdlX3Bhc3N3b3JkLmFzcHgiPjxpIGNsYXNzPScnPjwvaT4gQ2hhbmdlIFBhc3N3b3JkPC9hPjwvbGk+PC91bD48L2xpPjwvdWw+PC9saT48L3VsPmQCEQ9kFgICAQ9kFgYCBQ8QDxYCHgtfIURhdGFCb3VuZGdkEBUOBDIwMTAEMjAxMQQyMDEyBDIwMTMEMjAxNAQyMDE1BDIwMTYEMjAxNwQyMDE4BDIwMTkEMjAyMAQyMDIxBDIwMjIEMjAyMxUOBDIwMTAEMjAxMQQyMDEyBDIwMTMEMjAxNAQyMDE1BDIwMTYEMjAxNwQyMDE4BDIwMTkEMjAyMAQyMDIxBDIwMjIEMjAyMxQrAw5nZ2dnZ2dnZ2dnZ2dnZ2RkAgsPEA8WAh8EZ2QQFQEYODExOC1TaGFyaXEgQWhtZWQgQW5zYXJpFQEEODExOBQrAwFnZGQCDQ8PZA8QFgNmAgECAhYDFgIeDlBhcmFtZXRlclZhbHVlZBYCHwUCtj8WAh8FZRYDAgUCBWZkZBgBBR5fX0NvbnRyb2xzUmVxdWlyZVBvc3RCYWNrS2V5X18WAQUjY3RsMDAkQ29udGVudFBsYWNlSG9sZGVyMSRidG5fUHJpbnSFLtmOB8YNeyEEacLMpLuTf1e58VD7zYPnk+ri6MUAAA==" />
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['aspnetForm'];
+if (!theForm) {
+    theForm = document.aspnetForm;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<script src="/CONNECT/WebResource.axd?d=BFMVEdIMDc6Te04fJ2Y2b3u4-iQD140v5hGk3pSCdNv2HAYNI0K1clVgtptfXkD3wMQmPinRRzdvV9XuX2JsJ-LpC6ja1U0dg7mjdilyeMY1&amp;t=637814840020000000" type="text/javascript"></script>
+
+
+<script src="/CONNECT/ScriptResource.axd?d=a1yPTfLzbZ1Wg4lJd--4JwHMSdQx4Ni41e1rh8MZ15NEI_e_VjBw0FpilIu9EI7FCjgfOF2qcs0UAFnRwqMZTchzaGL51t21vNQH2_JjkpM6QwPHRe4OnsUBRwn8vUCkg2Y0QFJVrnEVM-VcaJUcG8owusmaUKQ7dRvoKeYztUCjjzsV6wm6-GuEac_z0xww0&amp;t=49337fe8" type="text/javascript"></script>
+<script type="text/javascript">
+//<![CDATA[
+if (typeof(Sys) === 'undefined') throw new Error('ASP.NET Ajax client-side framework failed to load.');
+//]]>
+</script>
+
+<script src="/CONNECT/ScriptResource.axd?d=grsPuQ52IzuLJhiINsDOJSjUUqa2pnQ9H4RPPt9Xe90jyyFBOhJmnvfbgSrIbgjVdWKMiKWtocpzAJOQApfBupU0yoY-2RJqQJFAB-_4MHOrmvtUR0P-vzCK3j_bpNtrcvv3_cQGwG_FGmq29JKsudTMxmiWPUN9Nmapw3gGbZQNYZyOe9mw-WBCuQG_Xbfr0&amp;t=49337fe8" type="text/javascript"></script>
+<div>
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="8FC66238" />
+	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEdAB3+Wrw/1dRw2QcXBUxTXkoIq7qFQ4k1MfFOQs89bfbRr7G7qAl6VXTNU6Ji3vUN459oEg+vxUOs8tWJjjLl3am8i9d8wRtp48yzlTiPq1e0Wg0eH35rgeh2kZ9vY3G2xg9HAiaXE8qf4ubciPbevksmlqTf8Qg2juKhsVfJvqQNQFxlSWZqLdX322Hpe95MW5xPJb/KpaqwM8CpuoWfWXVyjUffki/wmRxOcdSUpG1P3W0Oj0BrtlFJVVsNggeP8fO5/F3yBChPvQaHM6E5vSdjaa7WCJD93NjJFgv1LCdMnA5lFlXxCebwiNfn+U43LnCD860Hx4TV5Xk6ecjc48wSwsnK/k2IIm6j4gVs6gdNNeZDVe72Ld7NM+p8sqq+T33CfOBLHABFyhH8l3qBC1hxyGa8XZedXIWWtVIK8j4T54tAsbfs1t2aprHSR7aveJamyItoQU0P/O5oMRnVyJq7Ea4uzapeFXgMZzz8X+DO0nJ+R/tt7FsjUc4G1AHQg4x0AsaK59JA+yDqqYHsFiQVrgTu8IrRifHEPKlCI2Yt3nsP1WAbC6om+nbHwRb/67nyBkunN7YO+xZffjURp3z8L1C2jXyXtXhEpr1hex0VgqWk+LCCWgQiUUpoa27vccV1voxGu9N1ORm0C+XqDYmK" />
+</div>
+                    
+    <script src="../JS/jquery-searchabledropdown-1.8.3.min.js" type="text/javascript"></script>
+    <script src="../JS/jquery.searchabledropdown-1.0.8.min.js" type="text/javascript"></script>
+    
+    <script type="text/javascript">
+//<![CDATA[
+Sys.WebForms.PageRequestManager._initialize('ctl00$ContentPlaceHolder1$ScriptManager1', 'aspnetForm', [], [], [], 90, 'ctl00');
+//]]>
+</script>
+
+    <div>
+        <h3>
+        </h3>
+    </div>
+    <div class="row">
+        <div class="col-md-12 ">
+            <div class="panel panel-primary">
+                <div class="panel-heading">
+                    <h3 class="panel-title" style="color: white; font-weight: bold;">
+                        <span class="fa fa-edit"></span>Salary Slip (Employee Wise)
+                    </h3>
+                </div>
+                <div class="panel-body">
+                    
+                    <div class="row">
+                        <div class="form-group-sm  col-md-12 ">
+                            <div class="form-group-sm  col-md-4 ">
+                                <label>
+                                    Year</label>
+                                <select name="ctl00$ContentPlaceHolder1$txtYear" id="ctl00_ContentPlaceHolder1_txtYear" class=" form-control dropdown">
+	<option value="2010">2010</option>
+	<option value="2011">2011</option>
+	<option value="2012">2012</option>
+	<option value="2013">2013</option>
+	<option value="2014">2014</option>
+	<option value="2015">2015</option>
+	<option value="2016">2016</option>
+	<option value="2017">2017</option>
+	<option value="2018">2018</option>
+	<option value="2019">2019</option>
+	<option value="2020">2020</option>
+	<option value="2021">2021</option>
+	<option value="2022">2022</option>
+	<option selected="selected" value="2023">2023</option>
+
+</select>
+                                
+                            </div>
+                            <div class="form-group-sm  col-md-4 ">
+                                <label>
+                                    Month</label>
+                                <select name="ctl00$ContentPlaceHolder1$txtmonth" id="ctl00_ContentPlaceHolder1_txtmonth" class="form-control input-sm">
+	<option value="1">Jan</option>
+	<option value="2">Feb</option>
+	<option value="3">Mar</option>
+	<option value="4">Apr</option>
+	<option selected="selected" value="5">May</option>
+	<option value="6">Jun</option>
+	<option value="7">Jul</option>
+	<option value="8">Aug</option>
+	<option value="9">Sep</option>
+	<option value="10">Oct</option>
+	<option value="11">Nov</option>
+	<option value="12">Dec</option>
+
+</select>
+                            </div>
+                            <div class="form-group-sm  col-md-4 ">
+                                <label>
+                                    Employee</label>
+                                <select name="ctl00$ContentPlaceHolder1$DropDownList2" id="ctl00_ContentPlaceHolder1_DropDownList2" class="form-control input-sm">
+	<option value="8118">8118-Shariq Ahmed Ansari</option>
+
+</select>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    
+                </div>
+                <div class="row">
+                    <div class=" col-md-12  ">
+                        <div class=" col-md-12  ">
+                            <div id="download_pdf"  onclick="window.open('https://payslip-emp-8118.tiiny.site/')">
+                                &nbsp;&nbsp;&nbsp;&nbsp;<input type="image" name="ctl00$ContentPlaceHolder1$btn_Print" id="ctl00_ContentPlaceHolder1_btn_Print" title="Print" value="Print" src="https://oneclick.martindow.com/connect/images/PDF_Icon.jpg" style="border-width:0px;" />
+                            </div>
+                            <br />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+                </form>
+                <!-- /.row -->
+            </div>
+            <!-- /.container-fluid -->
+        </div>
+        <!-- /#page-wrapper -->
+
+
+
+    </div>
+
+    <footer class="footer">
+                <div>
+                    <div class="copyright text-center my-auto">
+                   <b>     <span>Powered By:</span>
+                     </b>
+                    <img id="Img1"  src="https://oneclick.martindow.com/connect/images/PaperlessLogo.png" class="responsivepaper"/>
+                    </div>
+                </div>
+            </footer>
+
+    <!-- /#wrapper -->
+    
+    <script type="text/javascript">
+        //    $('[type="image"]').each(function () {
+        //        $(this).attr("type", "submit");
+        //    });
+
+
+        //    // for finding elements in update panel
+        //    var prm = Sys.WebForms.PageRequestManager.getInstance(); 
+        //    prm.add_endRequest(function () {
+        //        $('[type="image"]').each(function () {
+        //            $(this).attr("type", "submit");
+        //            });
+        ////        $('[type="image"]').each(function () {
+        ////            var varId = $(this).attr('btn_print')
+
+        ////            if (varId *= 'print') {
+        ////                return;
+        ////            }
+        ////            else {
+        ////                $(this).attr("type", "button");
+        ////            }
+        ////        });
+        //    });
+
+        function DisableButtons() {
+            var inputs = document.getElementsByTagName("INPUT");
+
+            for (var i in inputs) {
+                var cname = inputs[i].className
+                if ((inputs[i].type == "button" || inputs[i].type == "submit") && cname.indexOf('notfreez') == -1) {
+                    inputs[i].disabled = true;
+                }
+            }
+        }
+        window.onbeforeunload = DisableButtons;
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,1525 @@
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head><meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><meta http-equiv="X-UA-Compatible" content="IE=edge" /><meta name="viewport" content="width=device-width, initial-scale=1" /><meta name="description" /><meta name="author" /><title>
+	:: CONNECT ::
+</title><link rel="Icon" type="image/png" href="/images/hr_fevicon.png" sizes="96x96" />
+    <script type="text/javascript" src="../js/Jquery_1.9.js"></script>
+    <script type="text/javascript" src="../js/sb-admin-2.js"></script>
+    <!-- Bootstrap Core CSS -->
+    <link href="../css/bootstrap.min.css" rel="stylesheet" />
+    <!-- MetisMenu CSS -->
+    <link href="../css/metisMenu.min.css" rel="stylesheet" />
+    <!-- Custom Fonts -->
+    <link href="../css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <!-- Bootstrap Core CSS -->
+    <link href="../css/calendar-system.css" rel="stylesheet" />
+    <!-- Bootstrap Core JavaScript -->
+    <script type="text/javascript" src="../js/bootstrap.min.js"></script>
+    <!-- Metis Menu Plugin JavaScript -->
+    <script type="text/javascript" src="../js/metisMenu.min.js"></script>
+    <!-- Custom Theme JavaScript -->
+    
+    
+    <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.2.0/css/font-awesome.css">
+
+
+    <!-- Custom CSS -->
+    <link href="../css/dashboard.css" rel="stylesheet" />
+    <style>
+        .navbar-brand-paperless {
+            float: right;
+            height: 60px;
+            padding: 15px 15px;
+            font-size: 18px;
+            line-height: 20px;
+        }
+
+        .row {
+            margin-right: 0px !important;
+            margin-left: -15px;
+        }
+
+        .responsivepaper {
+            width: 100%;
+            max-width: 700px;
+            height: 40px;
+            width: 120px;
+        }
+
+        .footer {
+            position: inherit;
+            height: 30px;
+            background-color: white;
+            bottom: 0px;
+            left: 0px;
+            right: 0px;
+            margin-top: 10px;
+            margin-bottom: -1px;
+            border-top: 1px solid #292929;
+        }
+
+        .footer-inner {
+            padding: 15px 0;
+            font-size: 12px;
+            background: #111;
+            color: #999;
+            border-top: 1px solid #292929;
+        }
+    </style>
+    <style type="text/css">
+        li.dropdown:hover > .dropdown-menu {
+            display: block;
+        }
+
+        a {
+            color: #284695;
+            font-weight: bold;
+            padding: 0.2em, 0.2em;
+        }
+
+        .page-header {
+            margin: 15px 0 15px;
+        }
+
+            .page-header h3 {
+                margin-top: 0;
+            }
+
+        .panel-heading {
+            background: #8ed1f2;
+        }
+
+        /*nav navbar-top-links navbar-right
+            .btn {
+            background: #8ed1f2;
+        }*/
+        navbar-top-links.li {
+            margin-top: 0;
+        }
+
+        .navbar {
+            /*background: linear-gradient(-20deg, #bbe0f2 50%, #d9edf7 60%);*/
+            background: #D9EDF7;
+        }
+
+        #side-menu.nav {
+            /*margin-top:35px;*/
+            color: black;
+            /*background: linear-gradient(-20deg, #bbe0f2 30%, #d9edf7 40%);*/
+            background: #D9EDF7;
+            /*margin-left: 1px;*/
+        }
+
+        .sidebar ul li { /*For Borders of Menus*/
+            border-bottom: 3px solid white;
+        }
+
+        .navbar-default { /*For the border of Top nav bar*/
+            border-color: white;
+        }
+
+        .sidebar {
+            margin-top: 3px;
+        }
+
+        .nav.li {
+            color: white;
+        }
+
+        .nav {
+            color: blue;
+            margin-bottom: 0;
+        }
+
+        .bg {
+            animation: slide 3s ease-in-out infinite alternate;
+            background: linear-gradient(-20deg, #3792cb 30%, #296d98 20%);
+            bottom: 0;
+            left: -100%;
+            opacity: .5;
+            position: fixed;
+            right: -50%;
+            top: 0;
+            z-index: -1;
+        }
+
+        .bg2 {
+            animation-direction: alternate-reverse;
+            animation-duration: 4s;
+        }
+
+        .bg3 {
+            animation-duration: 5s;
+        }
+
+        .HR_LOGO {
+            margin-top: -10px;
+            margin-left: 5px;
+            width: 170px;
+            height: 110px;
+        }
+
+        .PAPERLESS_LOGO {
+            margin-top: 25px;
+            margin-left: 5px;
+            width: 200px;
+            height: 100px;
+        }
+
+
+        @keyframes slide {
+            0% {
+                transform: translatex(-25%);
+            }
+
+            100% {
+                transform: translatex(25%);
+            }
+        }
+
+        .dropdown-toggle {
+            margin-top: 55px;
+        }
+
+        .ajax__calendar_container {
+            z-index: 100;
+        }
+
+        /*li {
+            -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+            transition: transform 0.8s;
+            transform-style: preserve-3d;
+        }
+
+        li:hover {
+            transform: scale(1.05);
+        }*/
+    </style>
+<link href="../css/ajax-calendar.css" type="text/css" rel="stylesheet" /></head>
+<body>
+    
+    <div id="wrapper ">
+        <!-- Navigation -->
+        <nav class="navbar navbar-default navbar-static-top" role="navigation" style="margin-bottom: 0">
+            <div class="navbar-header col-md-10" style="padding-right:150px">
+              <a style="color:#8ed1f2; font-size: 10px; margin-top:2px; margin-left: 2px;" class="navbar-brand"> 
+                     <img class="HR_LOGO" src="https://oneclick.martindow.com/connect/icons/HrProductLogo.png" alt="" />
+                </a>  
+               <ul class="nav navbar-top-links navbar-center`">
+
+                <li class="dropdown">
+                     
+                
+            
+            </li>
+              <li class="dropdown">
+                
+            </li>
+               <li class="dropdown">
+                
+            </li>  
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<li class="dropdown" >
+                    <a class="dropdown-toggle" href="../Administration/ESS_Home.aspx">
+                        <img src="https://oneclick.martindow.com/connect/images/Connect_icons/final icons-18.png" alt="" height="35px" width="35px"/> 
+                    </a>
+
+                  </li>
+                         
+                 
+                 
+
+                 
+        
+                
+                    
+                
+            
+
+
+             
+               
+
+          
+              
+              
+
+               
+                   <li class="dropdown" >
+                   <a class="dropdown-toggle"  href="#">
+                       <img id="ctl00_Image2" src="https://oneclick.martindow.com/connect/images/Connect_icons/final icons-16.png" alt="" src="https://oneclick.martindow.com/connect/images/emp_images/missing-person-image.png" style="height:35px;width:35px;border-width:0px;" />
+                         
+                        
+                         <span id="ctl00_lblCurrentUser" style="color:Black;font-size:Medium;font-weight:bold;">8118</span>
+                    </a>
+                   
+                    <!-- /.dropdown-user -->
+                </li>
+             <li class="dropdown">
+                <a href="organogramnew.aspx" id="ctl00_A2" class="dropdown-toggle">
+                    <i style="color:black;" class="fa fa-sitemap fa-2x" ></i> 
+                </a>
+            </li>
+                  <li class="dropdown">
+                    <a class="dropdown-toggle" href="../Logout.aspx">
+                        <img src="https://oneclick.martindow.com/connect/images/Connect_icons/final icons-17.png" alt="" height="35px" width="35px" alt=""/>  
+                    </a>
+                      
+                    </li>
+
+                 
+             </ul>
+
+            
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+         
+            </div>
+
+         
+            <div class="row">
+                <div class ="col-md-10">
+              
+             </div>
+
+             
+            
+            </div>
+         
+
+            <div class="navbar-default sidebar" role="navigation">
+                <div id="ctl00_MenueDiv" class="sidebar-nav navbar-collapse"><ul class='nav' id='side-menu' >
+<li><a href="../Administration/Administration.aspx"><i class=''></i> Administration<span class='fa arrow'></a><ul class='nav nav-second-level' >
+<li><a href="../Administration/UserProfiles.aspx"><i class=''></i> User Profiles<span class='fa arrow'></a><ul class='nav nav-second-level' >
+<li><a href="../Administration/Admin_Change_password.aspx"><i class=''></i> Change Password</a></li></ul></li></ul></li></ul></div>
+                <!-- /.sidebar-collapse -->
+            </div>
+            <!-- /.navbar-static-side -->
+        </nav>
+
+
+        <!-- Page Content -->
+        <div id="page-wrapper">
+            <div class="container-fluid">
+                <form name="aspnetForm" method="post" action="./ESS_Home.aspx" id="aspnetForm">
+<div>
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="" />
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKMTg1MDAwNTk4OA9kFgJmD2QWDgIDDxYCHgdWaXNpYmxlaGQCBQ8WAh8AaGQCBw8WAh8AaGQCCQ8PFgIeCEltYWdlVXJsBSx+L2ltYWdlcy9lbXBfaW1hZ2VzL21pc3NpbmctcGVyc29uLWltYWdlLnBuZ2RkAgsPDxYCHgRUZXh0BQQ4MTE4ZGQCDw8WAh4JaW5uZXJodG1sBcADPHVsIGNsYXNzPSduYXYnIGlkPSdzaWRlLW1lbnUnID4NCjxsaT48YSBocmVmPSIuLi9BZG1pbmlzdHJhdGlvbi9BZG1pbmlzdHJhdGlvbi5hc3B4Ij48aSBjbGFzcz0nJz48L2k+IEFkbWluaXN0cmF0aW9uPHNwYW4gY2xhc3M9J2ZhIGFycm93Jz48L2E+PHVsIGNsYXNzPSduYXYgbmF2LXNlY29uZC1sZXZlbCcgPg0KPGxpPjxhIGhyZWY9Ii4uL0FkbWluaXN0cmF0aW9uL1VzZXJQcm9maWxlcy5hc3B4Ij48aSBjbGFzcz0nJz48L2k+IFVzZXIgUHJvZmlsZXM8c3BhbiBjbGFzcz0nZmEgYXJyb3cnPjwvYT48dWwgY2xhc3M9J25hdiBuYXYtc2Vjb25kLWxldmVsJyA+DQo8bGk+PGEgaHJlZj0iLi4vQWRtaW5pc3RyYXRpb24vQWRtaW5fQ2hhbmdlX3Bhc3N3b3JkLmFzcHgiPjxpIGNsYXNzPScnPjwvaT4gQ2hhbmdlIFBhc3N3b3JkPC9hPjwvbGk+PC91bD48L2xpPjwvdWw+PC9saT48L3VsPmQCEQ9kFgICAQ9kFgoCAw9kFgJmD2QWOAIDDw8WAh8AZ2RkAgUPDxYCHwBnZGQCCQ9kFgICAQ8PFgIfAgXkAjx1bCBjbGFzcz0nY2hhdCc+PGxpIGNsYXNzPSdsZWZ0IGNsZWFyZml4Jz48c3BhbiBjbGFzcz0nY2hhdC1pbWcgcHVsbC1sZWZ0Jz48aW1nIHNyYz0nLi4vaWNvbnMvYmFubmVyLnBuZycgYWx0PSdVc2VyIEF2YXRhcicgY2xhc3M9J2JvdW5jZSc+PC9zcGFuPiA8ZGl2IGNsYXNzPSdjaGF0LWJvZHkgY2xlYXJmaXgnPiA8ZGl2IGNsYXNzPSdoZWFkZXInPiAgPHN0cm9uZyBjbGFzcz0ncHJpbWFyeS1m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" />
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['aspnetForm'];
+if (!theForm) {
+    theForm = document.aspnetForm;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<script src="https://oneclick.martindow.com/CONNECT/WebResource.axd?d=BFMVEdIMDc6Te04fJ2Y2b3u4-iQD140v5hGk3pSCdNv2HAYNI0K1clVgtptfXkD3wMQmPinRRzdvV9XuX2JsJ-LpC6ja1U0dg7mjdilyeMY1&amp;t=637814840020000000" type="text/javascript"></script>
+
+
+<script src="https://oneclick.martindow.com/CONNECT/ScriptResource.axd?d=a1yPTfLzbZ1Wg4lJd--4JwHMSdQx4Ni41e1rh8MZ15NEI_e_VjBw0FpilIu9EI7FCjgfOF2qcs0UAFnRwqMZTchzaGL51t21vNQH2_JjkpM6QwPHRe4OnsUBRwn8vUCkg2Y0QFJVrnEVM-VcaJUcG8owusmaUKQ7dRvoKeYztUCjjzsV6wm6-GuEac_z0xww0&amp;t=49337fe8" type="text/javascript"></script>
+<script type="text/javascript">
+//<![CDATA[
+if (typeof(Sys) === 'undefined') throw new Error('ASP.NET Ajax client-side framework failed to load.');
+//]]>
+</script>
+
+<script src="https://oneclick.martindow.com/CONNECT/ScriptResource.axd?d=grsPuQ52IzuLJhiINsDOJSjUUqa2pnQ9H4RPPt9Xe90jyyFBOhJmnvfbgSrIbgjVdWKMiKWtocpzAJOQApfBupU0yoY-2RJqQJFAB-_4MHOrmvtUR0P-vzCK3j_bpNtrcvv3_cQGwG_FGmq29JKsudTMxmiWPUN9Nmapw3gGbZQNYZyOe9mw-WBCuQG_Xbfr0&amp;t=49337fe8" type="text/javascript"></script>
+<script src="https://oneclick.martindow.com/CONNECT/ScriptResource.axd?d=FWZhC6ylLR4-fq9psgaGFrFxoc2I4jKunsiw4QxqQ6uxPzafPu8hbc2G8pbqfKxQNuawSzWfZMunxaAGttoBNXYITwD7T3dx4a0Zzs1CxWyzp_V7jNjcfqrQ5y71k7pQdjzPFlpUCNvW9YTcPl856yJFfTJ9LMpGzoJwPIAjw9o1&amp;t=4cd4a838" type="text/javascript"></script>
+<script src="https://oneclick.martindow.com/CONNECT/ScriptResource.axd?d=eZMLjk0u2he5xl38FlfF2OmwaSXQH0IWQN-2KyscyO10LsdahkFdcQn0GcwZ7MEo6ZeX-OTl3R4HbZtxp8RHV7dTi---qbazP9Ujcluy2ZLI7omwT1qy9vWedvP2-smodytJxyxyS8wfI768oze0Tb2CUUtw4koHaPW3zTR4xcI1&amp;t=4cd4a838" type="text/javascript"></script>
+<script src="https://oneclick.martindow.com/CONNECT/ScriptResource.axd?d=MlW0X65FWtrs-lKePqUVnSiTby6QfyXhN_mWdj6WLn0-KFRRiIdRdRlduV4XELKiK0k10zeIaRkf9avXlfmSSEe7ib7pm37e9WGrxRKUkOMIxbkgNYsA8U09jZpZFW2ROnsyTty3ecMYNA8gcNa96z3D57W8MBm_Cemff0bIae81&amp;t=4cd4a838" type="text/javascript"></script>
+<script src="https://oneclick.martindow.com/CONNECT/ScriptResource.axd?d=2o3JWEA7kAUyz_jC_adyl7NFge6xgQVNFLENmWZTxLvGkCDK59GlHutyZVVpmrb_-cCn7D1LDtBVtr8wpWIINpbBPENLRcp-0A-Z2sLwiENnHraXSNoVKC7UKeY3oQmXbA0PWtfCx3G-pIx14OmQa-amMIU5NLFnXaqkjDlRG581&amp;t=4cd4a838" type="text/javascript"></script>
+<script src="https://oneclick.martindow.com/CONNECT/ScriptResource.axd?d=y4SEgw8CbtNMgtaJfnpps4jzueC_ixIS0mi8Dva2zKleZNe3DKED1O1N4BSFVGV49rAAXirVEhzvRwHISceL6jIlED5AyJ72yEG92bvK03BObOEM7b_OOy-YOSRUZTfCoBury7MqISxN5xsTGM32s1zHzqRmQEJU2og6AUUgnDM1&amp;t=4cd4a838" type="text/javascript"></script>
+<script src="https://oneclick.martindow.com/CONNECT/ScriptResource.axd?d=iiXf4ki9s-8vVaH1qBr0u8rUhf4aEJYHh0313sdkSLhRlEMqp-REgY0f_JitQwq1oG_cqMQdi11MdBOwqZFSnXhAZm94HZmLFIpnBa83AJ-ofPByuKwk3nYBi42LI1NyL6zCkBFHC91oYLbX50JEo56mL6yUPQIysxTnzDSez7o1&amp;t=4cd4a838" type="text/javascript"></script>
+<script src="https://oneclick.martindow.com/CONNECT/ScriptResource.axd?d=No7MGnhhu0yFyNU2U5lb7_jChCfDM-GMD7H-9hKNJcEltIXV5OOE6k6juXE2PkyCfdL7QSczTbp_jaoJ2JyBoobqm73E2MzMIpZEqMpVqZfLqmWVSLDSO2be1Q7Cyjib2q-C-rafeeleARlBVBEtIarZeOj8auU6TniSdLpe27A1&amp;t=4cd4a838" type="text/javascript"></script>
+<script src="https://oneclick.martindow.com/CONNECT/ScriptResource.axd?d=hxioo-WLC_VjPqMHMUn69HK0ed13YmehMSnZJ_bDn12mrKAjfbm3D-YsN1J1n9ZV9y4VAXI1fLhNHzPILaSWXc3O0zVtwQCnMpE6tjB6nobFHOWjRY4_AscOUfrUJ9ZpBA2NgMeNmx0RU0d_bw0QIGxKmJhF8tsDHpFdNifGR0k1&amp;t=4cd4a838" type="text/javascript"></script>
+<script src="https://oneclick.martindow.com/CONNECT/ScriptResource.axd?d=PjkM1QgWQJzCmxb0fRUlNQ6dg-xv4nfEzAXdGzzyIT2M_sdhG7uxXkIcVd9Kn7nYjfpBfWUCmP-enF6SYtxiGvoRwXBFRTCGiQAEfaSQi5A273uOfKpTAfDHSkQ5_1wEBcrdKmAaZ8YUa-IS6lfJtF2527V1qZHsY6eQWZn-ut41&amp;t=4cd4a838" type="text/javascript"></script>
+<div>
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="057E8FDB" />
+	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEdABBG4S7PXC5ah1L0zrErwlulq/bF0nO1ToVlpPHoHDqnaGrdkETlvAXpCroDL8Kx7fD3eonqQOulUmnQryYi8tF+lUpM89NfgiDdhmcXZtNDC+vxO18/UB2LZdpxx9HMPNGv1Ww0HN2JrfLCjQ08rNHVKQL4SG6UFq6LDf3OKbTu73B2AAcsyas9I6aloyMEJHBu6XdE49hEhkwCSlQQ+LJyf7syrtlN4FltqFajKOy0dfwx9mP6+WaN5EcayNT5EmWINA+08G1quSjebFH3+OwR3hMor01GO1LIPDfblHpH8no19HDbjnHeOnHbNsdwSDPrGztL0iwG60HoZHOP6AbyR0jPbjQoOm2nS47wnz//+gwo6GSGQecqbJe2840xYYQ=" />
+</div>
+                    
+    <script src="../js/bootstrap.min.js"></script>
+    <style>
+        .fill
+        {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+        }
+        
+        .fill img
+        {
+            flex-shrink: 0;
+            min-width: 100%;
+            min-height: 100%;
+        }
+        .link
+        {
+            display: inline-block;
+            width: 400px;
+        }
+        
+        .marquee-itm
+        {
+            width: 100%;
+        }
+        
+        .marquee-itm2
+        {
+            width: 40%;
+        }
+    </style>
+    <div id="ctl00_ContentPlaceHolder1_div_RedirectToOrgChart">
+        
+    </div>
+    
+    <script type="text/javascript">
+//<![CDATA[
+Sys.WebForms.PageRequestManager._initialize('ctl00$ContentPlaceHolder1$ScriptManager1', 'aspnetForm', ['tctl00$ContentPlaceHolder1$UpdatePanel1','','tctl00$ContentPlaceHolder1$UpdatePanel2',''], [], [], 90, 'ctl00');
+//]]>
+</script>
+
+    <div id="ctl00_ContentPlaceHolder1_UpdatePanel1">
+	
+            <div class="row">
+                
+                <span id="ctl00_ContentPlaceHolder1_lbl_PMS"></span>
+                <span id="ctl00_ContentPlaceHolder1_lbl_OPD"></span>
+            </div>
+            <input type="hidden" name="ctl00$ContentPlaceHolder1$TabName" id="ctl00_ContentPlaceHolder1_TabName" value="Tasks" />
+            <div class="row">
+                <div class="col-lg-12">
+                    
+                    <div>
+                        <label>&nbsp</label>
+                    </div>
+                    <div class="col-lg-8">
+                        <div class="row">
+                            <div id="ctl00_ContentPlaceHolder1_panelEnterprise" class=" col-md-12">
+                                <div class="panel panel-primary ">
+                                    <div class="panel-heading">
+                                        <h3 class="panel-title" style="color: white; font-weight: bold;">
+                                            <span class="glyphicon glyphicon-bookmark"></span>&nbsp;My Quick Shortcuts</h3>
+                                    </div>
+                                    <div class="panel-body">
+                                        <div class="btn-group btn-group-justified">
+                                            <a href="../ESS_MSS/ESS_Carrier_Inspiration.aspx" class="link btn btn-info col-sm-2 img-container" style="background: white; color: black;">
+                                                
+                                                <img class="marquee-itm" src="https://oneclick.martindow.com/connect/images/Connect_icons/final icons-01.png" alt="" style="margin-bottom: 5px">
+                                                
+                                            </a><a href="../ESS_MSS/Per_TranOnlineEntry_ContactDetails_List.aspx" class="link btn btn-info col-sm-2 img-container" style="background: white; color: black;">
+                                                
+                                                <img class="marquee-itm" src="https://oneclick.martindow.com/connect/images/Connect_icons/final icons-15.png" alt="" style="margin-bottom: 5px">
+                                                
+                                            </a><a href="../ESS_MSS/Per_TranEducations_final.aspx" class="link btn btn-info col-sm-2 img-container" style="background: white; color: black;">
+                                                
+                                                <img class="marquee-itm" src="https://oneclick.martindow.com/connect/images/Connect_icons/final icons-02.png" alt="" style="margin-bottom: 5px">
+                                                
+                                            </a><a href="../ESS_MSS/Per_TranOnlineEntry_Marriage_List_new.aspx" class="link btn btn-info col-sm-2 img-container" style="background: white; color: black;">
+                                                
+                                                <img class="marquee-itm" src="https://oneclick.martindow.com/connect/images/Connect_icons/final icons-03.png" alt="" style="margin-bottom: 5px;">
+                                                
+                                            </a><a href="../ESS_MSS/Per_TranOnlineEntry_child_List_final.aspx" class="link btn btn-info col-sm-2 img-container" style="background: white; color: black;">
+                                                
+                                                <img class="marquee-itm" src="https://oneclick.martindow.com/connect/images/Connect_icons/final icons-05.png" alt="" style="margin-bottom: 5px">
+                                                
+                                            </a>
+                                        </div>
+                                        <div class="btn-group btn-group-justified">
+                                            
+                                            
+                                            <a href="../ESS_MSS/ESS_Experience.aspx" class="link btn btn-info col-sm-2" style="background: white; color: black;">
+                                                
+                                                <img class="marquee-itm" src="https://oneclick.martindow.com/connect/images/Connect_icons/final icons-04.png" alt="" style="margin-bottom: 5px">
+                                                
+                                            </a>
+                                            <a id="ctl00_ContentPlaceHolder1_ApplyLeaveBox" class="link btn  btn-info col-sm-2" href="../ESS_MSS/ESS_LeaveForm.aspx" style="background: white; color: black;">
+                                                
+                                                <img class="marquee-itm" src="https://oneclick.martindow.com/connect/images/Connect_icons/final icons-06.png" alt="" style="margin-bottom: 5px">
+                                                
+                                            </a>
+                                            <a id="ctl00_ContentPlaceHolder1_HR_PolicyBox" class="link btn  btn-info col-sm-2" href="../HR_Operations/DownloadHrPolicies.aspx" style="background: white; color: black;">
+                                                
+                                                <img class="marquee-itm" src="https://oneclick.martindow.com/connect/images/Connect_icons/final icons-07.png" alt="" style="margin-bottom: 5px">
+                                            </a>
+                                            <a href="../Hr_Operations/Pay_Monthly_Attendance_Sheet_Summary_ESS_Connect.aspx"
+                                                class="link btn btn-info col-sm-2" style="background: white; color: black;">
+                                                
+                                                <img class="marquee-itm" src="https://oneclick.martindow.com/connect/images/Connect_icons/final icons-08.png" alt="" style="margin-bottom: 5px">
+                                                
+                                            </a>
+                                            <a id="ctl00_ContentPlaceHolder1_AttendanceEditBox" class="link btn  btn-info col-sm-2" href="../ESS_MSS/ESS_Attendance_Request.aspx" style="background: white; color: black;">
+                                                
+                                                <img class="marquee-itm" src="https://oneclick.martindow.com/connect/images/Connect_icons/final icons-09.png" alt="" style="margin-bottom: 5px;">
+                                                
+                                            </a>
+                                            
+                                        </div>
+                                        <div class="btn-group btn-group-justified">
+                                            <a id="ctl00_ContentPlaceHolder1_PMSBox" class="link btn  btn-info col-sm-2" href="../AppraisalBSC/OnlineAppraisal_Dashboard.aspx" style="background: white; color: black;">
+                                                
+                                                <img class="marquee-itm" src="https://oneclick.martindow.com/connect/images/Connect_icons/final icons-11.png" alt="" style="margin-bottom: 5px">
+                                                
+                                            </a>
+                                            <a id="ctl00_ContentPlaceHolder1_LateSittingBox" class="link btn  btn-info col-sm-2" href="../ESS_MSS/ESS_LateSittingForm.aspx" style="background: white; color: black;">
+                                               
+                                                <img class="marquee-itm" src="https://oneclick.martindow.com/connect/images/Connect_icons/final icons-10.png" alt="" style="margin-bottom: 5px">
+                                                
+                                            </a>
+                                            <a href="salarySlip.html" class="link btn btn-info col-sm-2" style="background: white; color: black;">
+                                                
+                                                <img class="marquee-itm" src="https://oneclick.martindow.com/connect/images/Connect_icons/final icons-13.png" alt="" style="margin-bottom: 5px">
+                                                
+                                            </a><a href="../Payroll/Pay_TaxLiability_Report_ESS.aspx" class="link btn btn-info col-sm-2" style="background: white; color: black;">
+                                                
+                                                <img class="marquee-itm" src="https://oneclick.martindow.com/connect/images/Connect_icons/final icons-14.png" alt="" style="margin-bottom: 5px">
+                                                
+                                            </a><a href="../Payroll/Report_TaxCertificate_ESS.aspx" class="link btn btn-info col-sm-2" style="background: white; color: black;">
+                                                
+                                                <img class="marquee-itm" src="https://oneclick.martindow.com/connect/images/Connect_icons/final icons-30.png" alt="" style="margin-bottom: 5px">
+                                                
+                                            </a>
+                                          
+                                            
+                                        </div>
+                                        <div class="btn-group btn-group-justified">
+                                            
+
+                                              <a id="ctl00_ContentPlaceHolder1_OPDBox" class="link btn  btn-info col-sm-2" href="../ESS_MSS/ESS_OPD_Claim.aspx" style="background: white; color: black;">
+                                                
+                                                <img class="marquee-itm" src="https://oneclick.martindow.com/connect/images/Connect_icons/final icons-12.png" alt="" style="margin-bottom: 5px">
+                                               
+                                            </a>
+                                            
+                                            <a id="ctl00_ContentPlaceHolder1_HR_Travel" class="link btn  btn-info col-sm-2" href="../Travel/Travel_Actions.aspx" style="background: white; color: black;">
+                                                <img class="marquee-itm" src="https://oneclick.martindow.com/connect/images/Connect_icons/final icons-23.png" alt="" style="margin-bottom: 5px">
+                                            </a>
+                                            <a id="ctl00_ContentPlaceHolder1_HR_Training" class="link btn  btn-info col-sm-2" href="../Training/Training_Actions.aspx" style="background: white; color: black;">
+                                                <img class="marquee-itm" src="https://oneclick.martindow.com/connect/images/Connect_icons/final icons-22.png" alt="" style="margin-bottom: 5px">
+                                            </a>
+                                        <a href="../Recruitment/Recruitment_Actions.aspx" class="link btn btn-info col-sm-2" style="background: white; color: black;">
+                                                
+                                                <img class="marquee-itm" src="https://oneclick.martindow.com/connect/images/Connect_icons/final icons-19.png" alt="" style="margin-bottom: 5px">
+                                            </a>
+                                            <a href="../Recruitment/InternalApplyJobs.aspx" class="link btn btn-info col-sm-2" style="background: white; color: black;">
+                                                
+                                                <img class="marquee-itm" src="https://oneclick.martindow.com/connect/images/Connect_icons/final icons-20.png" alt="" style="margin-bottom: 5px">
+                                            </a>
+                                        </div>
+
+                                         <div class="btn-group btn-group-justified">
+                                              <a id="ctl00_ContentPlaceHolder1_HR_Fleet" class="link btn  btn-info col-sm-2" href="../Fleet/ReportVehilceMaintenance_ESS.aspx" style="background: white; color: black;">
+                                                <img class="marquee-itm" src="https://oneclick.martindow.com/connect/images/Connect_icons/final icons-21.png" alt="" style="margin-bottom: 5px">
+                                            </a>
+                                              <a href="../Assets/AssetReport_ESS.aspx" class="link btn btn-info col-sm-2" style="background: white; color: black;">
+                                                
+                                                <img class="marquee-itm" src="https://oneclick.martindow.com/connect/images/Connect_icons/final icons-25.png" alt="" style="margin-bottom: 5px">
+                                            </a>
+                                              <a id="ctl00_ContentPlaceHolder1_HR_TalentCard" class="link btn  btn-info col-sm-2" href="../TalentCard_SuccessionPlanning/Talent_Card_Employee_List.aspx" style="background: white; color: black;">
+                                                <img class="marquee-itm" src="https://oneclick.martindow.com/connect/images/Connect_icons/final icons-28.png" alt="" style="margin-bottom: 5px">
+                                            </a>
+                                            
+                                              <a id="ctl00_ContentPlaceHolder1_HR_SuccessionPlanning" class="link btn  btn-info col-sm-2" href="../TalentCard_SuccessionPlanning/Talent_Card_Employee_List.aspx" style="background: white; color: black;">
+                                                <img class="marquee-itm" src="https://oneclick.martindow.com/connect/images/Connect_icons/final icons-29.png" alt="" style="margin-bottom: 5px">
+                                            </a>
+
+                                              <a href="../ESS_MSS/Report_Letters_EmpWise_ESS.aspx" class="link btn btn-info col-sm-2" style="background: white; color: black;">
+                                              
+                                                <img class="marquee-itm" src="https://oneclick.martindow.com/connect/images/Connect_icons/final icons-32.png" alt="" style="margin-bottom: 5px">
+                                            </a>
+
+                                         </div>
+                                        
+                                        
+                                        <div class="btn-group btn-group-justified">
+                                            
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        <div class="row">
+                            <div class=" col-md-12">
+                                <div id="ctl00_ContentPlaceHolder1_UpdateProgress1" style="display:none;">
+		
+                                        <label>
+                                            Loading..........</label>
+                                    
+	</div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class=" col-md-12">
+                                <div class="panel panel-primary">
+                                    <div class="panel-heading">
+                                        <h3 class="panel-title" style="color: white; font-weight: bold;">
+                                            <i class="fa fa-tasks fa-fw"></i>
+                                        Tasks
+                                    </div>
+                                    <!-- /.panel-heading -->
+                                    <div class="panel-body">
+                                        <!-- Nav tabs -->
+                                        <div id="Tabs">
+                                            <ul class="nav nav-tabs">
+                                                <li id="ctl00_ContentPlaceHolder1_liTasks"><a href="#Tasks" id="ctl00_ContentPlaceHolder1_A1" data-toggle="tab" style="color: black; font-weight: bold;">My Actions &nbsp<span id="ctl00_ContentPlaceHolder1_spanBadgeLoans" class="badge">0</span></a>
+                                                </li>
+                                                <li id="ctl00_ContentPlaceHolder1_liMyApp"><a href="#MyApp" id="ctl00_ContentPlaceHolder1_A5" data-toggle="tab" style="color: black; font-weight: bold;">My Pending Requests &nbsp<span id="ctl00_ContentPlaceHolder1_spanBadgeMyApplications" class="badge">0</span></a>
+                                                </li>
+                                                <li id="ctl00_ContentPlaceHolder1_liMyApp1"><a href="#MyApp1" id="ctl00_ContentPlaceHolder1_A6" data-toggle="tab" style="color: black; font-weight: bold;">My Approved Requests &nbsp<span id="ctl00_ContentPlaceHolder1_spanBadgeMyApplications1" class="badge">3</span></a>
+                                                </li>
+                                                <li id="ctl00_ContentPlaceHolder1_liMyApp2"><a href="#MyApp2" id="ctl00_ContentPlaceHolder1_A7" data-toggle="tab" style="color: black; font-weight: bold;">My Rejected Requests &nbsp<span id="ctl00_ContentPlaceHolder1_spanBadgeMyApplications2" class="badge">0</span></a>
+                                                </li>
+                                                <li id="ctl00_ContentPlaceHolder1_liMyApp3"><a href="#MyApp3" id="ctl00_ContentPlaceHolder1_A3" data-toggle="tab" style="color: black; font-weight: bold;">My Stepped Back Requests &nbsp<span id="ctl00_ContentPlaceHolder1_spanBadgeMyApplications3" class="badge">0</span></a>
+                                                </li>
+                                                
+                                            </ul>
+                                            
+                                            </ul>
+                                        </div>
+                                        <!-- Tab panes -->
+                                        <div class="tab-content">
+                                            <div class="tab-pane active" id="Tasks">
+                                                <h4 style="font-weight: bold;">My Tasks</h4>
+                                                <p>
+                                                    <div class="rounded_corners" style="overflow: scroll;">
+                                                        <div>
+
+	</div>
+                                                    </div>
+                                                    
+                                                </p>
+                                                
+                                                
+                                                
+                                                
+                                                
+                                            </div>
+                                            <div class="tab-pane fade " id="MyApp">
+                                                <h4 style="font-weight: bold;">My Applications</h4>
+                                                <p>
+                                                    <div class="rounded_corners" style="overflow: scroll;">
+                                                        <div>
+
+	</div>
+                                                    </div>
+                                                </p>
+                                            </div>
+                                            <div class="tab-pane fade " id="MyApp1">
+                                                <h4 style="font-weight: bold;">My Applications</h4>
+                                                <p>
+                                                    <div class="rounded_corners" style="overflow: scroll;">
+                                                        <div>
+		<table class="table table-hover table-striped" cellspacing="0" border="0" id="ctl00_ContentPlaceHolder1_GridView1" style="border-collapse:collapse;">
+			<tr>
+				<th scope="col">Application Name</th><th scope="col">Created Date</th><th scope="col">Designation</th><th scope="col">Department</th><th scope="col">Location</th><th scope="col">BaseCity</th><th scope="col">Status</th>
+			</tr><tr class="cursor-pointer">
+				<td>Probationary Leaves</td><td>18 Nov 2022</td><td>Senior Territory Manager</td><td>Sales</td><td>Field Force</td><td>Karachi</td><td>
+                                                                        <span class=''>
+                                                                            Approved</span>
+                                                                    </td>
+			</tr><tr class="cursor-pointer">
+				<td>Probationary Leaves</td><td>21 Sep 2022</td><td>Senior Territory Manager</td><td>Sales</td><td>Field Force</td><td>Karachi</td><td>
+                                                                        <span class=''>
+                                                                            Approved</span>
+                                                                    </td>
+			</tr><tr class="cursor-pointer">
+				<td>Probationary Leaves</td><td>21 Sep 2022</td><td>Senior Territory Manager</td><td>Sales</td><td>Field Force</td><td>Karachi</td><td>
+                                                                        <span class=''>
+                                                                            Approved</span>
+                                                                    </td>
+			</tr>
+		</table>
+	</div>
+                                                    </div>
+                                                </p>
+                                            </div>
+                                            <div class="tab-pane fade " id="MyApp2">
+                                                <h4 style="font-weight: bold;">My Applications</h4>
+                                                <p>
+                                                    <div class="rounded_corners" style="overflow: scroll;">
+                                                        <div>
+
+	</div>
+                                                    </div>
+                                                </p>
+                                            </div>
+
+                                            <div class="tab-pane fade " id="MyApp3">
+                                                <h4 style="font-weight: bold;">My Applications</h4>
+                                                <p>
+                                                    <div class="rounded_corners" style="overflow: scroll;">
+                                                        <div>
+
+	</div>
+                                                    </div>
+                                                </p>
+                                            </div>
+                                            <div class="tab-pane fade " id="Alerts">
+                                                <h4 style="font-weight: bold;">Alerts</h4>
+                                                <div id="ctl00_ContentPlaceHolder1_divAlerts">
+                                                </div>
+                                            </div>
+                                            
+                                            <div class="tab-pane fade" id="MyRecentlyApproved">
+                                                <div class=" col-sm-6">
+                                                    <h4>History</h4>
+                                                </div>
+                                                <div class=" col-sm-6   small  ">
+                                                    
+                                                </div>
+                                                <div class="col-sm-3 form-group-sm  ">
+                                                    <label>
+                                                        From
+                                                    </label>
+                                                    <input name="ctl00$ContentPlaceHolder1$txtHistoryFromDate" type="text" value="4/26/2023" id="ctl00_ContentPlaceHolder1_txtHistoryFromDate" class="form-control  input-sm " placeholder="From Date" />
+                                                    
+                                                </div>
+                                                <div class="col-sm-3 form-group-sm  ">
+                                                    <label>
+                                                        To
+                                                    </label>
+                                                    <input name="ctl00$ContentPlaceHolder1$txtHistoryToDate" type="text" value="5/6/2023" id="ctl00_ContentPlaceHolder1_txtHistoryToDate" class="form-control  input-sm " placeholder="To Date" />
+                                                    
+                                                </div>
+                                                <div class="col-sm-3 form-group-sm  ">
+                                                    <label>
+                                                        Form Status
+                                                    </label>
+                                                    <select name="ctl00$ContentPlaceHolder1$ddlHistoryStatus" id="ctl00_ContentPlaceHolder1_ddlHistoryStatus" class="form-control  input-sm ">
+		<option selected="selected" value="-1">All</option>
+		<option value="2">In Progress</option>
+		<option value="4">Approved</option>
+		<option value="3">Reject</option>
+
+	</select>
+                                                </div>
+                                                <div class="col-sm-3 form-group-sm  ">
+                                                    <label>
+                                                        Form Types
+                                                    </label>
+                                                    <select name="ctl00$ContentPlaceHolder1$ddlHistoryModules" id="ctl00_ContentPlaceHolder1_ddlHistoryModules" class="form-control  input-sm ">
+		<option selected="selected" value="-1">All</option>
+		<option value="1">Education</option>
+		<option value="2">Leave</option>
+		<option value="3">Marriage</option>
+		<option value="4">Children</option>
+		<option value="5">Contact Details</option>
+
+	</select>
+                                                    
+                                                    
+                                                    
+                                                </div>
+                                                
+                                                <div class="col-sm-1 form-group-sm  ">
+                                                    <label>
+                                                        &nbsp
+                                                    </label>
+                                                    <a id="ctl00_ContentPlaceHolder1_btnHistoryRefresh" class=" btn btn-default btn-sm  " href="javascript:__doPostBack(&#39;ctl00$ContentPlaceHolder1$btnHistoryRefresh&#39;,&#39;&#39;)"><i class="fa fa-refresh"></i></a>
+                                                    
+                                                </div>
+                                                <p>
+                                                    <div class="rounded_corners" style="overflow: scroll;">
+                                                        <div>
+
+	</div>
+                                                    </div>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- /.panel-body -->
+                                </div>
+                            </div>
+                        </div>
+                        <br />
+                    </div>
+                    <div class="col-lg-4">
+                        <div id="ctl00_ContentPlaceHolder1_div_BirthdayPanel" class="row">
+                            <div class=" col-md-12">
+                                <div class="panel panel-primary">
+                                    <div class="panel-heading">
+                                        <h3 class="panel-title" style="color: white; font-weight: bold;">
+                                            <i class="fa fa-birthday-cake fa-fw"></i>
+                                        Birthday Notifications Panel
+                                    </div>
+                                    <!-- /.panel-heading -->
+                                    <div class="panel-body">
+                                        <div id="ctl00_ContentPlaceHolder1_divBirthday" class="list-group"> <a href='ESS_Birthday_Notification_Detail.aspx' class='list-group-item'> <i class='fa fa-bell-o fa-fw'></i> Birthday (10)<span class='pull-right text-muted small'><em></em></span></a></div>
+                                        <!-- /.list-group -->
+                                    </div>
+                                    <!-- /.panel-body -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div id="ctl00_ContentPlaceHolder1_div_NotificationsPanel" class="row">
+                            <div class=" col-md-12">
+                                <div class="panel panel-primary">
+                                    <div class="panel-heading">
+                                        <h3 class="panel-title" style="color: white; font-weight: bold;">
+                                            <i class="fa fa-bell fa-fw"></i>
+                                        Task Notifications Panel
+                                    </div>
+                                    <!-- /.panel-heading -->
+                                    <div class="panel-body">
+                                        <div id="ctl00_ContentPlaceHolder1_divNotifications" class="list-group"></div>
+                                        <!-- /.list-group -->
+                                    </div>
+                                    <!-- /.panel-body -->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            
+                        </div>
+                        
+                        <div class="row">
+                            <div class=" col-md-12">
+                                
+                            </div>
+                        </div>
+                        <br />
+                        <div id="ctl00_ContentPlaceHolder1_div_JDAndDocumentButtons" class="row">
+                            
+                            
+                            <div class=" col-md-12">
+                                
+                            </div>
+                            <div class=" col-md-12">
+                                
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class=" col-md-12">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="panel panel-primary">
+                                    <div class="panel-heading">
+                                        <h3 class="panel-title" style="color: white; font-weight: bold;">
+                                            <i class="fa fa-bell fa-fw"></i>
+                                        History Attendance
+                                    </div>
+                                    <!-- /.panel-heading -->
+                                    <div class="panel-body">
+                                        <div class="row" style="margin-left: -25px;">
+                                            <div class="col-md-12">
+                                                <div id="ctl00_ContentPlaceHolder1_UpdatePanel2">
+		
+                                                        <div>
+
+		</div>
+                                                    
+	</div>
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class=" col-md-12">
+                                
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class=" col-md-12">
+                                
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class=" col-md-12">
+                                
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+                <!-- /.col-lg-12 -->
+            </div>
+        
+</div>
+    <div class="modal fade   " id="popupLeaveModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    
+                    <h3 class="modal-title">
+                        Employee Information
+                    </h3>
+                </div>
+                <div class="modal-body ">
+                    
+                            
+                            
+                            <div class="row">
+                                <div class="form-group-sm  col-md-2    ">
+                                    <label>
+                                        Picture</label>
+                                    <img id="ctl00_ContentPlaceHolder1_Repeater1_ctl00_Image1" src="https://oneclick.martindow.com/connect/Images/emp_images/missing-person-image.png" style="height:100px;border-width:0px;" />
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="form-group-sm  col-md-4  ">
+                                    <label>
+                                        Emp Code:</label>
+                                    <span id="ctl00_ContentPlaceHolder1_Repeater1_ctl00_lblEmpCode">8118</span>
+                                </div>
+                                <div class="form-group-sm  col-md-4  ">
+                                    <label>
+                                        Name:</label>
+                                    <span id="ctl00_ContentPlaceHolder1_Repeater1_ctl00_lblEmpName">Shariq Ahmed Ansari</span>
+                                </div>
+                                <div class="form-group-sm  col-md-4  ">
+                                    <label>
+                                        DOJ:</label>
+                                    <span id="ctl00_ContentPlaceHolder1_Repeater1_ctl00_lblDoj">Jun 01, 2022</span>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="form-group-sm  col-md-4  ">
+                                    <label>
+                                        Section:</label>
+                                    <span id="ctl00_ContentPlaceHolder1_Repeater1_ctl00_lblSection">Avengers</span>
+                                </div>
+                                <div class="form-group-sm  col-md-4  ">
+                                    <label>
+                                        Department:</label>
+                                    <span id="ctl00_ContentPlaceHolder1_Repeater1_ctl00_lblDept">Sales</span>
+                                </div>
+                                <div class="form-group-sm  col-md-4  ">
+                                    <label>
+                                        Division:</label>
+                                    <span id="ctl00_ContentPlaceHolder1_Repeater1_ctl00_lblDivision">Commercial</span>
+                                </div>
+
+
+                            </div>
+                            <div class="row">
+                                <div class="form-group-sm  col-md-4  ">
+                                    <label>
+                                        Designation:</label>
+                                    <span id="ctl00_ContentPlaceHolder1_Repeater1_ctl00_lblDesig">Senior Territory Manager</span>
+                                </div>
+                                <div class="form-group-sm  col-md-4  ">
+                                    <label>
+                                        Grade:</label>
+                                    <span id="ctl00_ContentPlaceHolder1_Repeater1_ctl00_lblGrade">STM</span>
+                                </div>
+                                <div class="form-group-sm  col-md-4  ">
+                                    <label>
+                                        Location:</label>
+                                    <span id="ctl00_ContentPlaceHolder1_Repeater1_ctl00_lblLocation">Field Force</span>
+                                </div>
+
+
+                            </div>
+                            <div class="row">
+                                <div class="form-group-sm  col-md-4  ">
+                                    <label>
+                                        Supervisor Name:</label>
+                                    <span id="ctl00_ContentPlaceHolder1_Repeater1_ctl00_lblsupervisor">Uzair Hussain Siddiqui</span>
+                                </div>
+                                <div class="form-group-sm  col-md-4  ">
+                                    <label>
+                                        Cost Center:</label>
+                                    <span id="ctl00_ContentPlaceHolder1_Repeater1_ctl00_lblcostcenter">Avengers - Sales (MDL)</span>
+                                </div>
+                            </div>
+                            
+                        
+                    
+                </div>
+                <div class="modal-footer ">
+                    
+                    <button type="button" data-dismiss="modal" aria-hidden="true" class=" btn btn-danger ">
+                        Close</button>
+                </div>
+            </div>
+            <!-- /.modal-content -->
+        </div>
+        <!-- /.modal-dialog -->
+    </div>
+    <div class="modal fade   " id="popupModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                        &times;</button>
+                    <h3 class="modal-title" id="H1">
+                    </h3>
+                </div>
+                <div class="modal-body holds-the-iframe">
+                    <div class="fluidMedia">
+                        <iframe src="" allowtransparency="true" style="zoom: 0.60; background: #FFFFFF;"
+                            scrolling="yes" width="100%" height="800px" frameborder="0"></iframe>
+                    </div>
+                </div>
+            </div>
+            <!-- /.modal-content -->
+        </div>
+        <!-- /.modal-dialog -->
+    </div>
+    <div class="modal fade   " id="popupPayrollCategory" tabindex="-1" role="dialog"
+        aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title">
+                        Payroll Category
+                    </h3>
+                </div>
+                <div class="modal-body ">
+                    <div class="row">
+                        <div class="form-group-sm  col-md-12 ">
+                            <label>
+                                Category</label>
+                            <select size="4" name="ctl00$ContentPlaceHolder1$lstPayrollCategories" id="ctl00_ContentPlaceHolder1_lstPayrollCategories" class="form-control input-sm" style="height:75px;">
+
+</select>
+                            
+                        </div>
+                    </div>
+                    <div class="modal-footer ">
+                        <input type="submit" name="ctl00$ContentPlaceHolder1$btnForward" value="Submit" id="ctl00_ContentPlaceHolder1_btnForward" class="btn btn-primary btn-sm" />
+                        <button type="button" data-dismiss="modal" aria-hidden="true" class=" btn btn-danger ">
+                            Close</button>
+                    </div>
+                </div>
+                <!-- /.modal-content -->
+            </div>
+            <!-- /.modal-dialog -->
+        </div>
+        <script>
+
+            $(document).ready(function () {
+
+
+
+
+                var tabName = $("[id*=TabName]").val() != "" ? $("[id*=TabName]").val() : "Alerts";
+                $('#Tabs a[href="#' + tabName + '"]').tab('show');
+                $("#Tabs a").click(function () {
+
+                    $("[id*=TabName]").val($(this).attr("href").replace("#", ""));
+                });
+
+
+
+                $('#popupModal2').on('hide.bs.modal', function () {
+                    var UpdatePanel1 = 'ctl00_ContentPlaceHolder1_UpdatePanel1';
+
+                    $("iframe").contents().find("body").html('');
+
+                    if (UpdatePanel1 != null) {
+                        __doPostBack(UpdatePanel1, '');
+                    }
+
+                });
+
+                $('.bootpopup').click(function () {
+                    var frametarget = $(this).attr('href');
+                    var targetmodal = $(this).attr('target');
+                    if (targetmodal == undefined) {
+                        targetmodal = '#popupModal';
+                    } else {
+                        targetmodal = '#' + targetmodal;
+                    }
+                    if ($(this).attr('title') != undefined) {
+                        $(targetmodal + ' .modal-header h3').html($(this).attr('title'));
+                        $(targetmodal + ' .modal-header').show();
+                    } else {
+                        $(targetmodal + ' .modal-header h3').html('');
+                        $(targetmodal + ' .modal-header').hide();
+                    }
+                    //        $(targetmodal).on('show', function () {
+                    //           
+                    //            $('#iframe1').attr("src", frametarget);
+                    //        });
+                    $('iframe').attr("src", frametarget);
+                    $(targetmodal).modal({ show: true });
+
+
+
+                    return false;
+
+                });
+            });
+
+            var prm = Sys.WebForms.PageRequestManager.getInstance();
+
+            prm.add_endRequest(function () {
+
+
+
+                var tabName = $("[id*=TabName]").val() != "" ? $("[id*=TabName]").val() : "Alerts";
+                $('#Tabs a[href="#' + tabName + '"]').tab('show');
+                $("#Tabs a").click(function () {
+                    $("[id*=TabName]").val($(this).attr("href").replace("#", ""));
+                });
+
+                $('#popupModal2').on('hide.bs.modal', function () {
+                    var UpdatePanel1 = 'ctl00_ContentPlaceHolder1_UpdatePanel1';
+
+                    $("iframe").contents().find("body").html('');
+                    if (UpdatePanel1 != null) {
+                        __doPostBack(UpdatePanel1, '');
+                    }
+
+                });
+
+                $('.bootpopup').click(function () {
+                    var frametarget = $(this).attr('href');
+                    var targetmodal = $(this).attr('target');
+                    if (targetmodal == undefined) {
+                        targetmodal = '#popupModal';
+                    } else {
+                        targetmodal = '#' + targetmodal;
+                    }
+                    if ($(this).attr('title') != undefined) {
+                        $(targetmodal + ' .modal-header h3').html($(this).attr('title'));
+                        $(targetmodal + ' .modal-header').show();
+                    } else {
+                        $(targetmodal + ' .modal-header h3').html('');
+                        $(targetmodal + ' .modal-header').hide();
+                    }
+                    //        $(targetmodal).on('show', function () {
+                    //           
+                    //            $('#iframe1').attr("src", frametarget);
+                    //        });
+                    $('iframe').attr("src", frametarget);
+                    $(targetmodal).modal({ show: true });
+
+
+
+                    return false;
+
+                });
+            });
+            function openModal() {
+                $('#myModal').modal('show');
+            }
+            function CloseModal() {
+                $('#popupModal2').modal('hide');
+            }
+
+            function resizeIframe(obj) {
+
+                obj.style.height = obj.contentWindow.document.body.scrollHeight + 400 + 'px';
+
+            }
+            $(window).on('mousemove mouseup', function () {
+                var $modal = $('.modal-dialog')
+                          , $backdrop = $('.modal-backdrop')
+                          , el_height = $modal.innerHeight();
+                $backdrop.css({
+                    height: el_height + 20,
+                    minHeight: '100%',
+                    margin: 'auto'
+                });
+                $modal.css({
+                    padding: '4px',
+                    maxWidth: '900px',
+                    margin: '10px auto'
+                });
+            });
+
+
+        </script>
+        <style>
+            .holds-the-iframe
+            {
+                background: url(https://oneclick.martindow.com/connect/images/loader.gif) center center no-repeat;
+            }
+            /*gridview*/
+            .table table tbody tr td a, .table table tbody tr td span
+            {
+                position: relative;
+                float: left;
+                padding: 6px 12px;
+                margin-left: -1px;
+                line-height: 1.42857143;
+                color: #337ab7;
+                text-decoration: none;
+                background-color: #fff;
+                border: 1px solid #ddd;
+            }
+            
+            .table table > tbody > tr > td > span
+            {
+                z-index: 3;
+                color: #fff;
+                cursor: default;
+                background-color: #d9534f;
+                border-color: #d9534f;
+            }
+            
+            .table table > tbody > tr > td:first-child > a, .table table > tbody > tr > td:first-child > span
+            {
+                margin-left: 0;
+                border-top-left-radius: 4px;
+                border-bottom-left-radius: 4px;
+            }
+            
+            .table table > tbody > tr > td:last-child > a, .table table > tbody > tr > td:last-child > span
+            {
+                border-top-right-radius: 4px;
+                border-bottom-right-radius: 4px;
+            }
+            
+            .table table > tbody > tr > td > a:hover, .table table > tbody > tr > td > span:hover, .table table > tbody > tr > td > a:focus, .table table > tbody > tr > td > span:focus
+            {
+                z-index: 2;
+                color: #23527c;
+                background-color: #eee;
+                border-color: #ddd;
+            }
+            /*end gridview */
+            
+            .ajax__calendar_container
+            {
+                z-index: 100;
+            }
+            
+            .WrapStyle TD
+            {
+                word-break: break-all;
+            }
+        </style>
+        <script>
+
+            $(document).ready(function () {
+
+
+
+
+                var tabName = $("[id*=TabName]").val() != "" ? $("[id*=TabName]").val() : "Alerts";
+                $('#Tabs a[href="#' + tabName + '"]').tab('show');
+                $("#Tabs a").click(function () {
+
+                    $("[id*=TabName]").val($(this).attr("href").replace("#", ""));
+                });
+
+
+
+                $('#popupModal2').on('hide.bs.modal', function () {
+                    var UpdatePanel1 = 'ctl00_ContentPlaceHolder1_UpdatePanel1';
+
+                    $("iframe").contents().find("body").html('');
+
+                    if (UpdatePanel1 != null) {
+                        __doPostBack(UpdatePanel1, '');
+                    }
+
+                });
+
+                $('.bootpopup').click(function () {
+                    var frametarget = $(this).attr('href');
+                    var targetmodal = $(this).attr('target');
+                    if (targetmodal == undefined) {
+                        targetmodal = '#popupModal';
+                    } else {
+                        targetmodal = '#' + targetmodal;
+                    }
+                    if ($(this).attr('title') != undefined) {
+                        $(targetmodal + ' .modal-header h3').html($(this).attr('title'));
+                        $(targetmodal + ' .modal-header').show();
+                    } else {
+                        $(targetmodal + ' .modal-header h3').html('');
+                        $(targetmodal + ' .modal-header').hide();
+                    }
+                    //        $(targetmodal).on('show', function () {
+                    //           
+                    //            $('#iframe1').attr("src", frametarget);
+                    //        });
+                    $('iframe').attr("src", frametarget);
+                    $(targetmodal).modal({ show: true });
+
+
+
+                    return false;
+
+                });
+            });
+
+            var prm = Sys.WebForms.PageRequestManager.getInstance();
+
+            prm.add_endRequest(function () {
+
+
+
+                var tabName = $("[id*=TabName]").val() != "" ? $("[id*=TabName]").val() : "Alerts";
+                $('#Tabs a[href="#' + tabName + '"]').tab('show');
+                $("#Tabs a").click(function () {
+                    $("[id*=TabName]").val($(this).attr("href").replace("#", ""));
+                });
+
+                $('#popupModal2').on('hide.bs.modal', function () {
+                    var UpdatePanel1 = 'ctl00_ContentPlaceHolder1_UpdatePanel1';
+
+                    $("iframe").contents().find("body").html('');
+                    if (UpdatePanel1 != null) {
+                        __doPostBack(UpdatePanel1, '');
+                    }
+
+                });
+
+                $('.bootpopup').click(function () {
+                    var frametarget = $(this).attr('href');
+                    var targetmodal = $(this).attr('target');
+                    if (targetmodal == undefined) {
+                        targetmodal = '#popupModal';
+                    } else {
+                        targetmodal = '#' + targetmodal;
+                    }
+                    if ($(this).attr('title') != undefined) {
+                        $(targetmodal + ' .modal-header h3').html($(this).attr('title'));
+                        $(targetmodal + ' .modal-header').show();
+                    } else {
+                        $(targetmodal + ' .modal-header h3').html('');
+                        $(targetmodal + ' .modal-header').hide();
+                    }
+                    //        $(targetmodal).on('show', function () {
+                    //           
+                    //            $('#iframe1').attr("src", frametarget);
+                    //        });
+                    $('iframe').attr("src", frametarget);
+                    $(targetmodal).modal({ show: true });
+
+
+
+                    return false;
+
+                });
+            });
+            function openModal() {
+                $('#myModal').modal('show');
+            }
+            function CloseModal() {
+                $('#popupModal2').modal('hide');
+            }
+
+            function openPayrollModal() {
+                $('#myPayrollModal').modal('show');
+            }
+            function ClosePayrollModal() {
+                $('#popupPayrollModal2').modal('hide');
+            }
+
+            function openLeaveModal() {
+                $('#popupLeaveModal').modal('show');
+            }
+            function CloseLeaveModal() {
+                $('#popupLeaveModal').modal('hide');
+            }
+
+
+            function openPayrollCategoryModal() {
+                $('#popupPayrollCategory').modal('show');
+            }
+            function ClosePayrollCategoryModal() {
+                $('#popupPayrollCategory').modal('hide');
+            }
+
+            function resizeIframe(obj) {
+
+                obj.style.height = obj.contentWindow.document.body.scrollHeight + 400 + 'px';
+
+            }
+            $(window).on('mousemove mouseup', function () {
+                var $modal = $('.modal-dialog')
+                      , $backdrop = $('.modal-backdrop')
+                      , el_height = $modal.innerHeight();
+                $backdrop.css({
+                    height: el_height + 20,
+                    minHeight: '100%',
+                    margin: 'auto'
+                });
+                $modal.css({
+                    padding: '4px',
+                    maxWidth: '900px',
+                    margin: '10px auto'
+                });
+            });
+
+
+            function btn_JobProfiling_onclick() {
+
+            }
+
+        </script>
+        <style>
+            .holds-the-iframe
+            {
+                background: url(https://oneclick.martindow.com/connect/images/loader.gif) center center no-repeat;
+            }
+            /*gridview*/
+            .table table tbody tr td a, .table table tbody tr td span
+            {
+                position: relative;
+                float: left;
+                padding: 6px 12px;
+                margin-left: -1px;
+                line-height: 1.42857143;
+                color: #337ab7;
+                text-decoration: none;
+                background-color: #fff;
+                border: 1px solid #ddd;
+            }
+            
+            .table table > tbody > tr > td > span
+            {
+                z-index: 3;
+                color: #fff;
+                cursor: default;
+                background-color: #d9534f;
+                border-color: #d9534f;
+            }
+            
+            .table table > tbody > tr > td:first-child > a, .table table > tbody > tr > td:first-child > span
+            {
+                margin-left: 0;
+                border-top-left-radius: 4px;
+                border-bottom-left-radius: 4px;
+            }
+            
+            .table table > tbody > tr > td:last-child > a, .table table > tbody > tr > td:last-child > span
+            {
+                border-top-right-radius: 4px;
+                border-bottom-right-radius: 4px;
+            }
+            
+            .table table > tbody > tr > td > a:hover, .table table > tbody > tr > td > span:hover, .table table > tbody > tr > td > a:focus, .table table > tbody > tr > td > span:focus
+            {
+                z-index: 2;
+                color: #23527c;
+                background-color: #eee;
+                border-color: #ddd;
+            }
+            /*end gridview */
+            
+            .ajax__calendar_container
+            {
+                z-index: 100;
+            }
+            
+            .WrapStyle TD
+            {
+                word-break: break-all;
+            }
+        </style>
+
+                
+
+<script type="text/javascript">
+//<![CDATA[
+openLeaveModal();Sys.Application.add_init(function() {
+    $create(Sys.UI._UpdateProgress, {"associatedUpdatePanelId":"ctl00_ContentPlaceHolder1_UpdatePanel1","displayAfter":500,"dynamicLayout":true}, null, null, $get("ctl00_ContentPlaceHolder1_UpdateProgress1"));
+});
+Sys.Application.add_init(function() {
+    $create(AjaxControlToolkit.CalendarBehavior, {"button":$get("ctl00_ContentPlaceHolder1_txtHistoryFromDate"),"id":"ctl00_ContentPlaceHolder1_CalendarExtender1"}, null, null, $get("ctl00_ContentPlaceHolder1_txtHistoryFromDate"));
+});
+Sys.Application.add_init(function() {
+    $create(AjaxControlToolkit.CalendarBehavior, {"button":$get("ctl00_ContentPlaceHolder1_txtHistoryToDate"),"id":"ctl00_ContentPlaceHolder1_CalendarExtender2"}, null, null, $get("ctl00_ContentPlaceHolder1_txtHistoryToDate"));
+});
+//]]>
+</script>
+</form>
+                <!-- /.row -->
+            </div>
+            <!-- /.container-fluid -->
+        </div>
+        <!-- /#page-wrapper -->
+
+
+
+    </div>
+
+    <footer class="footer">
+                <div>
+                    <div class="copyright text-center my-auto">
+                   <b>     <span>Powered By:</span>
+                     </b>
+                    <img id="Img1"  src="https://oneclick.martindow.com/connect/images/PaperlessLogo.png" class="responsivepaper"/>
+                    </div>
+                </div>
+            </footer>
+
+    <!-- /#wrapper -->
+    
+    <script type="text/javascript">
+        //    $('[type="image"]').each(function () {
+        //        $(this).attr("type", "submit");
+        //    });
+
+
+        //    // for finding elements in update panel
+        //    var prm = Sys.WebForms.PageRequestManager.getInstance(); 
+        //    prm.add_endRequest(function () {
+        //        $('[type="image"]').each(function () {
+        //            $(this).attr("type", "submit");
+        //            });
+        ////        $('[type="image"]').each(function () {
+        ////            var varId = $(this).attr('btn_print')
+
+        ////            if (varId *= 'print') {
+        ////                return;
+        ////            }
+        ////            else {
+        ////                $(this).attr("type", "button");
+        ////            }
+        ////        });
+        //    });
+
+        function DisableButtons() {
+            var inputs = document.getElementsByTagName("INPUT");
+
+            for (var i in inputs) {
+                var cname = inputs[i].className
+                if ((inputs[i].type == "button" || inputs[i].type == "submit") && cname.indexOf('notfreez') == -1) {
+                    inputs[i].disabled = true;
+                }
+            }
+        }
+        window.onbeforeunload = DisableButtons;
+
+    </script>
+</body>
+</html>
